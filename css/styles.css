@@ -1,0 +1,271 @@
+:root {
+  --primer-color: #1e202b;
+  --secondary-color: #262936;
+  --tertary-color: #2d303d;
+  --quad-color: #323544;
+  --p-color: #bfc1c8;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--primer-color);
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.custom {
+  color: #009ad8;
+  margin: 20px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: normal;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+/* Nav Bar Section */
+.collapse a {
+  border: solid 2px transparent;
+  border-radius: 30px;
+  padding: 5px 50px;
+  color: white;
+}
+.collapse a:hover {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+
+.navbar-nav .nav-link.active {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+
+input {
+  border: none;
+}
+.logo-title {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 0.8em;
+}
+.logo {
+  width: 4rem;
+  height: 2.375rem;
+}
+.logo-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-brand .logo-text span {
+  font-size: 10px;
+}
+nav li {
+  padding-right: 3rem;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Contact */
+/* Bar */
+.bar {
+  background: #262936;
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-size: 0.9285714286em;
+}
+.bar a {
+  color: #bfc1c8;
+}
+.bar a::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  background: url(../assets/arrow-gray.png) no-repeat;
+  margin: 0 20px;
+}
+.mr-3 {
+  margin-right: 1rem !important;
+}
+.contact-details .map {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.map {
+  height: 220px;
+}
+.contact-details .contact-info {
+  padding: 20px;
+}
+.contact-details .contact-info a {
+  color: white;
+}
+.contact-form input:not([type="submit"]),
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: white;
+  border: 2px solid #393c48;
+  background: transparent;
+}
+
+form input,
+form textarea,
+form select {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+.button,
+form input[type="submit"],
+form input[type="button"],
+form button,
+form input[type="reset"] {
+  border: none;
+  background: #009ad8;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+.button,
+.contact-content form input[type="submit"] {
+  padding: 10px 20px;
+}
+.text-right {
+  text-align: right;
+}
+.contact-details {
+  background: #262936;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("../assets/banner.png");
+}
+input[type="text"] {
+  padding: 1.25rem;
+  background-color: #1e202b;
+  color: white;
+}
+.button,
+form input[type="submit"] {
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+}
+
+/* Table Section */
+.forecast-container {
+  overflow: hidden;
+  background: #323544;
+  margin-top: -6rem;
+}
+.forecast-container .forecast:nth-child(even) {
+  background-color: #262936;
+}
+.forecast-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.num {
+  font-size: 4rem;
+  margin-right: 2rem;
+  font-weight: 700;
+}
+.degree {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.forecast span {
+  font-size: 14px;
+  color: rgb(191, 193, 200);
+}
+.forecast-containt .location {
+  color: rgb(191, 193, 200);
+}
+.forecast-containt {
+  padding: 30px 20px;
+  font-size: 1.14rem;
+}
+/* Footer Section */
+footer {
+  background-color: #262936;
+}
+
+footer a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  transition: 0.3s ease;
+  font-size: 1.42em;
+}
+footer a:hover {
+  background: #009ad8;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link.active {
+    border-color: #009ad8;
+    color: #009ad8;
+  }
+  .collapse a {
+    display: block;
+    padding: 20px;
+  }
+  .navbar-nav .nav-link.active {
+    border-color: transparent;
+  }
+  nav li {
+    padding-right: 0;
+  }
+  .nav-item {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  .collapse {
+    background-color: #262936;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    list-style: none;
+  }
+}

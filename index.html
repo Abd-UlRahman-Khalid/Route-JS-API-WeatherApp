@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- =====================HEAD===================================== -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="auther" content="Abd-UlRahman" />
+    <title>Weather</title>
+    <!-- Install FavIcon -->
+    <link rel="icon" href="./assets/logo.png" />
+    <!-- Link FrontAwsom -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Link Bootstarp -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+<!-- ======================BODY===================================== -->
+  <body class="text-white">
+    <!-- =====================NavBar================================== -->
+    <header>
+      <nav
+        class="container navbar navbar-dark navbar-expand-lg bg-transparent py-5"
+      >
+        <div class="container-fluid">
+            <!-- -------------------LOGO----------------------------- -->
+          <a class="navbar-brand d-flex" href="#">
+            <img src="./assets/logo@2x.png" alt="Logo" class="logo mx-3" />
+            <div class="logo-text d-flex flex-column">
+              <h1 class="logo-title">Weather</h1>
+              <span>tagline goes here</span>
+            </div>
+          </a>
+           <!-- -------------------toggler Btn----------------------------- -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+             <!-- -------------------Menu----------------------------- -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-white">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live camera</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item text-white">
+                <a class="nav-link" href="./pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- ======================Main===================================== -->
+    <main>
+      <div class="hero py-5">
+        <div class="container">
+          <form class="find-location d-flex flex-column position-relative mb-5">
+            <input
+            id="search"
+              type="text"
+              placeholder="Find your location..."
+              class="type-location rounded-pill w-100"
+            />
+            <input
+            id="Find"
+              type="submit"
+              class="submit-location text-white position-absolute rounded-pill"
+              value="Find"
+              placeholder="Find"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="forecast-table py-5">
+        <div class="container">
+          <div
+            class="forecast-container rounded d-flex flex-column flex-lg-row" id="forecast"
+          >
+           
+             
+        
+         
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- ======================Footer=================================== -->
+    <footer class="p-5">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-8">
+            <form
+              action="#"
+              class="subscribe-form d-flex flex-column position-relative mb-4"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email to subscribe..."
+                class="w-100 rounded-pill"
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                class=" text-white position-absolute rounded-pill"
+              />
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <p>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
